@@ -1,0 +1,3 @@
+person; Oleg; 24; male;
+student; Ben; 22; male; 01; 3.5;
+teacher; Olga; 23; female; 1000.0; english;
