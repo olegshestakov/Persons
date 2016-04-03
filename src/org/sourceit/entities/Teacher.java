@@ -1,6 +1,6 @@
 package org.sourceit.entities;
 
-public class Teacher extends Person {
+public class Teacher extends Person /*implements Parseable*/ {
 
     protected double salary;
     protected String subject;
@@ -8,12 +8,13 @@ public class Teacher extends Person {
     public static final String NAME_OF_CLASS = "teacher";
 
     public Teacher() {
+//        super();
         this.salary = 2000.0;
         this.subject = "math";
     }
 
     public Teacher(double salary, String subject) {
-        super();
+        super("Oleg", "male", 24);
         this.salary = salary;
         this.subject = subject;
     }
@@ -22,6 +23,10 @@ public class Teacher extends Person {
         super(name, gender, age);
         this.salary = salary;
         this.subject = subject;
+    }
+
+    public Teacher(String name, String gender, double salary, String subject) {
+        this(name, gender, 50, salary, subject);
     }
 
     public double getSalary() {

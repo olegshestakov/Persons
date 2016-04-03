@@ -2,6 +2,10 @@ package org.sourceit.entities;
 
 public class Student extends Person {
 
+    static {
+        System.out.println("Student static block");
+    }
+
     protected String id;
     protected double gpa;
 

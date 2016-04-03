@@ -3,7 +3,6 @@ package org.sourceit.entities;
 import org.sourceit.exception.ReadException;
 
 public class Person implements Parseable {
-
     protected String name;
     protected String gender;
     protected int age;
@@ -54,7 +53,7 @@ public class Person implements Parseable {
                 this.gender + ";";
     }
 
-    @Override
+
     public Person readProperties(String properties) throws ReadException {
         Person person = new Person();
         try {

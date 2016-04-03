@@ -10,8 +10,6 @@ import java.io.IOException;
 
 public class PersonSymbolServiceImpl extends SymbolParseService implements PersonService {
 
-
-    @Override
     public Person[] readPersons(File file) throws IOException, ReadException {
         String[] stringArrPersons = super.readEntities(file).split("\\n");
         Person[] persons = new Person[stringArrPersons.length];
@@ -26,7 +24,6 @@ public class PersonSymbolServiceImpl extends SymbolParseService implements Perso
 
     }
 
-    @Override
     public void writePersons(Person[] persons, File file) throws IOException {
         String personString = "";
 

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PersonSuite" verbose="1">
+    <test name="test Person functionality">
+        <classes>
+            <class name="org.sourceit.entities.PersonTest"/>
+            <class name="org.sourceit.entities.StudentTest"/>
+        </classes>
+    </test>
+</suite>
